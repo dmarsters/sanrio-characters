@@ -40,7 +40,7 @@ dev = [
 ]
 
 [project.scripts]
-sanrio-characters = "sanrio-characters.server:run_server"
+sanrio-characters = "sanrio_characters.server:run_server"
 
 [project.urls]
 Homepage = "https://github.com/lushy/sanrio-characters"
