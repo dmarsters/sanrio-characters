@@ -1,0 +1,350 @@
+olog:
+  metadata:
+    name: "Sanrio Character Design"
+    version: "1.0.0"
+    description: |
+      Categorical specification of Sanrio character design aesthetics.
+      Formalizes how design intent maps to concrete character properties through
+      proportion-based morphisms and coherence constraints.
+    
+    core_principle: |
+      Sanrio characters embody "accessible cuteness through proportion precision."
+      The magic is not in individual elements but in their mathematical relationships.
+      A tiny body with large head is cute; the ratio is what matters.
+      A pastel palette is soft; the desaturation level determines the feeling.
+      Simplicity is strength; each feature removed increases adorability.
+
+  # ============================================================================
+  # TYPES (Objects in the Sanrio design space)
+  # ============================================================================
+  
+  types:
+    HeadShape:
+      description: "Fundamental head silhouette shapes for Sanrio characters"
+      instances:
+        - large_round_orb
+        - tilted_oval
+        - simplified_geometric
+        - elongated_teardrop
+        - minimalist_blob
+        - cat_like_curved
+        - wide_and_flat
+        - ovoid_with_point
+      properties:
+        visual_weight: "high | medium | low"
+        geometric_purity: "organic | hybrid | angular"
+        expressiveness: "neutral | expressive | minimal"
+    
+    BodyProportion:
+      description: "Ratio of head to body and overall silhouette"
+      instances:
+        - head_dominant_80_20
+        - balanced_cute_50_50
+        - body_focused_30_70
+        - limbless_blob
+        - tiny_torso_large_head
+        - extended_and_fluid
+      properties:
+        head_to_body_ratio: "number 0.2 to 2.0"
+        visual_stability: "grounded | balanced | floating"
+        approachability: "high | medium | low"
+    
+    FacialStyle:
+      description: "Expression and feature density of face"
+      instances:
+        - dot_eyes_curved_smile
+        - dots_and_line_mouth
+        - closed_happy_eyes
+        - large_oval_eyes
+        - minimal_expression_one_mark
+        - curious_expression
+        - serene_neutral_expression
+      properties:
+        feature_count: "integer 1 to 3"
+        emotional_clarity: "explicit | subtle | ambiguous"
+        appeal: "high | balanced | understated"
+    
+    ColorTriad:
+      description: "Pastel color scheme with primary, secondary, and accent"
+      instances:
+        - soft_pink_lavender_mint
+        - butter_yellow_peach_blue
+        - pale_blue_lilac_cream
+        - light_mint_pink_yellow
+        - dusty_rose_sage_cream
+        - pale_gray_pink_blue
+        - light_coral_lavender_mint
+        - peachy_cream_blue_gray
+      properties:
+        warmth: "warm | neutral | cool"
+        saturation_level: "muted | balanced | vivid"
+        emotional_temperature: "cozy | serene | energetic"
+    
+    SizeCategory:
+      description: "Physical scale and functional context"
+      instances:
+        - pocket_sized
+        - small_plush_toy
+        - medium_cat_sized
+        - decorative_shelf
+        - wearable_charm
+      properties:
+        scale: "tiny | small | medium | large"
+        tactile_quality: "holdable | displayable | wearable"
+        accessibility: "intimate | social | collectible"
+    
+    ConceptType:
+      description: "What the character is meant to represent"
+      instances:
+        - creature
+        - object
+        - emotion
+        - environment
+        - abstract_concept
+      properties:
+        tangibility: "concrete | abstract"
+        visual_reference: "natural | invented | metaphorical"
+    
+    EmotionalTone:
+      description: "Dominant emotional quality the character conveys"
+      instances:
+        - joyful
+        - melancholic
+        - anxious
+        - sleepy
+        - mischievous
+        - dreamy
+        - determined
+        - serene
+      properties:
+        valence: "positive | negative | neutral"
+        activation_level: "high | medium | low"
+        universality: "universal | niche | culturally_bound"
+    
+    DesignIntent:
+      description: "Qualitative design guidance (mood, shape feeling, color feeling)"
+      instances: "unbounded - any design analysis from Claude"
+      properties:
+        mood: "string - creative mood description"
+        weight_feeling: "string - physical quality description"
+        color_feeling: "string - color palette guidance"
+        size_implication: "string - scale guidance"
+        primary_shape: "string - dominant shape characteristic"
+        design_rationale: "string - why this design matches the concept"
+    
+    CharacterSpecification:
+      description: "Complete character design with all parameters"
+      instances: "unbounded - generated for each character"
+      properties:
+        character_name: "string"
+        concept_type: "ConceptType"
+        head_shape: "HeadShape"
+        body_proportion: "BodyProportion"
+        facial_style: "FacialStyle"
+        color_triad: "ColorTriad"
+        size_category: "SizeCategory"
+        emotional_tone: "EmotionalTone"
+        design_rationale: "string"
+
+  # ============================================================================
+  # MORPHISMS (Transformations between types)
+  # ============================================================================
+  
+  morphisms:
+    
+    - name: "emotional_tone_to_head_shape"
+      source: "EmotionalTone"
+      target: "HeadShape"
+      description: |
+        Maps emotional quality to head shape choice.
+        Melancholic → elongated (drooping), joyful → round (buoyant),
+        anxious → angular (sharp), serene → soft (curved)
+    
+    - name: "emotional_tone_to_facial_style"
+      source: "EmotionalTone"
+      target: "FacialStyle"
+      description: |
+        Maps emotional quality to facial expression density.
+        Serene → minimal or neutral, joyful → expressive, melancholic → closed eyes
+    
+    - name: "design_intent_to_head_shape"
+      source: "DesignIntent"
+      target: "HeadShape"
+      description: |
+        Maps qualitative design intent (weight_feeling, primary_shape) to 
+        concrete head shape. "drooping" → elongated_teardrop,
+        "blob" → minimalist_blob, "curved" → cat_like_curved
+    
+    - name: "design_intent_to_body_proportion"
+      source: "DesignIntent"
+      target: "BodyProportion"
+      description: |
+        Maps weight_feeling and size_implication to body ratio.
+        "tiny, insignificant" → tiny_torso_large_head,
+        "weighted, heavy" → body_focused_30_70,
+        "fluid, flowing" → extended_and_fluid
+    
+    - name: "design_intent_to_color_triad"
+      source: "DesignIntent"
+      target: "ColorTriad"
+      description: |
+        Maps color_feeling (muted, warm, cool, ethereal) to specific
+        pastel triads. "muted, dusty" → dusty_rose_sage_cream,
+        "warm, cozy" → butter_yellow_peach_blue
+    
+    - name: "design_intent_to_size_category"
+      source: "DesignIntent"
+      target: "SizeCategory"
+      description: |
+        Maps size_implication to functional size category.
+        "pocket-sized, tiny" → pocket_sized,
+        "decorative" → decorative_shelf
+    
+    - name: "concept_type_to_proportional_approach"
+      source: "ConceptType"
+      target: "BodyProportion"
+      description: |
+        Concept type influences proportion strategy.
+        Creature → typically balanced, emotion → head-dominant,
+        object → varied, environment → extended
+    
+    - name: "emotional_tone_to_color_triad"
+      source: "EmotionalTone"
+      target: "ColorTriad"
+      description: |
+        Maps emotional quality to color palette warmth and saturation.
+        Melancholic → muted, cool; joyful → vivid, warm; dreamy → ethereal, soft
+    
+    - name: "emotional_tone_to_size_category"
+      source: "EmotionalTone"
+      target: "SizeCategory"
+      description: |
+        Emotional quality affects perceived appropriate size.
+        Determined → medium or larger, sleepy → smaller and cozier,
+        anxious → pocket-sized (protective)
+
+  # ============================================================================
+  # COMMUTATIVE DIAGRAMS (Coherence constraints)
+  # ============================================================================
+  
+  commutative_diagrams:
+    
+    proportional_coherence:
+      description: |
+        If head_shape has high visual_weight, body_proportion must 
+        accommodate it to maintain overall balance.
+      assertion: |
+        visual_weight(head_shape) + visual_stability(body_proportion) = "cute"
+      constraint_type: "ratio_preservation"
+      paths:
+        - steps: ["heavy head", "requires grounded body"]
+        - steps: ["light head", "allows balanced or floating body"]
+        - steps: ["organic head", "pairs with flexible proportions"]
+        - steps: ["angular head", "needs visual anchoring"]
+    
+    emotional_coherence:
+      description: |
+        Emotional tone must be consistent across head_shape, 
+        facial_style, and color_triad.
+      assertion: |
+        emotional_tone is the prime, and all other choices 
+        must express the same emotion
+      constraint_type: "semantic_alignment"
+      paths:
+        - steps: ["melancholic emotion", "elongated shape", "closed eyes", "muted colors"]
+        - steps: ["joyful emotion", "round shape", "expressive face", "vivid colors"]
+        - steps: ["serene emotion", "soft curves", "minimal features", "cool palette"]
+        - steps: ["dreamy emotion", "organic blob", "curious eyes", "ethereal colors"]
+    
+    size_appropriateness:
+      description: |
+        Size category should match emotional tone and character concept.
+        A determined warrior shouldn't be pocket-sized without irony.
+      assertion: |
+        size_category should align with emotional intensity and 
+        concept tangibility
+      constraint_type: "semantic_alignment"
+      paths:
+        - steps: ["anxious emotion", "prefers pocket or small sizes"]
+        - steps: ["determined emotion", "prefers medium or larger"]
+        - steps: ["serene emotion", "compatible with any size"]
+    
+    color_saturation_precision:
+      description: |
+        Saturation level of color_triad must match emotional intensity
+        and design intent color_feeling.
+      assertion: |
+        muted emotions require muted colors, vivid emotions enable vivid colors
+      constraint_type: "magnitude_correspondence"
+      mapping: |
+        melancholic/sleepy → muted saturation
+        joyful/determined → balanced to vivid saturation
+        serene/dreamy → balanced saturation
+    
+    expressiveness_balance:
+      description: |
+        Facial feature density (from facial_style) should balance 
+        with head shape simplicity.
+      assertion: |
+        simple head shape can support more facial features;
+        complex head shape should have fewer features
+      constraint_type: "inverse_ratio"
+      examples:
+        - head_shape: "minimalist_blob"
+          expected_facial_style: "dot_eyes_curved_smile | minimal_expression_one_mark"
+          rationale: "Simple shape needs more character in face"
+        - head_shape: "simplified_geometric"
+          expected_facial_style: "minimal_expression_one_mark"
+          rationale: "Complex shape is already expressive"
+
+  # ============================================================================
+  # NATURAL TRANSFORMATIONS (Composition rules)
+  # ============================================================================
+  
+  natural_transformations:
+    
+    design_intent_to_specification:
+      description: |
+        Describes how to compose design_intent morphisms into 
+        a complete CharacterSpecification.
+      
+      algorithm: |
+        1. Parse design_intent (mood, weight_feeling, color_feeling, 
+           size_implication, primary_shape)
+        2. Apply emotional_tone_to_head_shape(inferred_tone, intent.primary_shape)
+        3. Apply design_intent_to_body_proportion(intent.weight_feeling, 
+           intent.size_implication)
+        4. Apply design_intent_to_color_triad(intent.color_feeling)
+        5. Apply design_intent_to_facial_style(inferred_tone)
+        6. Apply design_intent_to_size_category(intent.size_implication)
+        7. Validate against commutative_diagrams (proportional_coherence, 
+           emotional_coherence, size_appropriateness)
+        8. Return CharacterSpecification with all fields populated
+    
+    concept_to_character:
+      description: |
+        How a raw concept (e.g., "procrastination") becomes a 
+        character through intent analysis and design morphisms.
+      
+      steps:
+        - identify_concept_type: "Classify as creature, object, emotion, etc."
+        - infer_emotional_tone: "What emotion dominates the concept?"
+        - generate_design_intent: "Claude analyzes mood, weight, color, size"
+        - apply_morphisms: "Map intent to design choices"
+        - validate_coherence: "Check against commutative diagrams"
+        - instantiate_character: "Create complete CharacterSpecification"
+    
+    inheritance_for_variants:
+      description: |
+        How to create character variants while preserving core identity.
+      
+      principle: |
+        A character variant must preserve its core emotional_tone 
+        and concept_type, while varying head_shape or color_triad 
+        within the same coherence constraints.
+      
+      example:
+        base_character: "Procrastination character (melancholic, drooping)"
+        variant_color: "Same shape, different muted color triad"
+        variant_expression: "Same concept, more anxious facial style"
+        invariant: "Emotional coherence maintained in all variants"
