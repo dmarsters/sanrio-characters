@@ -1,0 +1,480 @@
+olog:
+  metadata:
+    name: "Sanrio Character Design - Intentionality"
+    version: "1.0.0"
+    description: |
+      Explains WHY Sanrio characters work and what makes them feel distinctly "Sanrio."
+      Captures the sensory principles, design intentions, and composition strategies
+      that make these characters universally adorable.
+    
+    core_insight: |
+      Sanrio doesn't create characters; Sanrio reveals what makes something inherently cute.
+      Every design choice answers: "Does this increase approachability without losing identity?"
+      The genius is mathematical: proportion precision, color restraint, feature economy.
+
+  # ============================================================================
+  # CHARACTER ARCHETYPES (with intentions and principles)
+  # ============================================================================
+  
+  instances:
+    
+    joyful_character_archetype:
+      character_type: "emotional_tone"
+      examples: ["Hello Kitty", "Badtz-Maru variations"]
+      
+      core_intention: "Universal happiness through proportion exuberance"
+      commercial_promise: |
+        "This character will make people smile. Its proportions broadcast joy
+        before they ever see its face. The roundness is confidence; the pastel
+        is optimism."
+      
+      composition_principle: |
+        Joyful Sanrio characters use:
+        - Round or buoyant head shapes (large_round_orb, tilted_oval)
+        - Generous proportions (head-dominant or balanced)
+        - Expressive faces (dot_eyes_curved_smile, large_oval_eyes)
+        - Warm color palettes (butter_yellow_peach, light_coral)
+        - Medium to larger size (displayable, approachable)
+      
+      why_this_works: |
+        Roundness is universally read as safe and non-threatening.
+        Pastel warmth triggers comfort responses. Head-dominant proportions
+        make characters appear innocent and trustworthy. Expressive faces
+        communicate openness. Together, these create an "I'm happy to see you"
+        sensation that transcends language.
+      
+      sensory_principles:
+        - expansiveness: "Each element adds optimistic visual weight"
+        - clarity: "Face is immediately readable as happy"
+        - approachability: "Nothing sharp, angular, or threatening"
+        - warmth: "Color temperature invites interaction"
+      
+      proportion_rules:
+        head_to_body: "0.8 to 1.0 (prominent, expressive)"
+        facial_feature_count: "3 (eyes + mouth, clear and bright)"
+        color_saturation: "balanced to vivid (readable from distance)"
+      
+      design_intent_keywords:
+        - "joyful"
+        - "cheerful"
+        - "bright"
+        - "open"
+        - "welcoming"
+        - "innocent"
+        - "safe"
+      
+      forbidden_combinations:
+        - "joyful + angular head shape"
+        - "joyful + muted color triad"
+        - "joyful + serene/neutral facial style"
+      rationale: |
+        These combinations contradict the core intention. Angular shapes
+        suggest wariness, muted colors suggest sadness, neutral faces
+        suppress the emotional clarity.
+    
+    melancholic_character_archetype:
+      character_type: "emotional_tone"
+      examples: ["Aggretsuko variations", "Cinnamoroll (melancholic moments)"]
+      
+      core_intention: "Approachability through acknowledged sadness"
+      commercial_promise: |
+        "This character feels what I feel. It doesn't pretend to be happy.
+        In recognizing my sadness, it makes sadness less lonely."
+      
+      composition_principle: |
+        Melancholic Sanrio characters use:
+        - Drooping or elongated shapes (elongated_teardrop, wide_and_flat)
+        - Head-heavy proportions (tiny_torso_large_head, head-dominant)
+        - Soft or minimal faces (closed_happy_eyes, serene_neutral_expression)
+        - Muted color palettes (dusty_rose_sage, pale_gray_pink)
+        - Smaller size (intimate, not imposing)
+      
+      why_this_works: |
+        Drooping shapes are visually metaphorical for sadness (shoulders down).
+        Head-heavy proportions suggest introspection and inward focus.
+        Closed eyes or neutral expressions refuse false cheerfulness.
+        Muted colors match internal grey emotional weather. Small size
+        makes the character vulnerable, which paradoxically makes it safer—
+        you're the strong one, protecting something delicate.
+      
+      sensory_principles:
+        - honesty: "Refuses to pretend happiness"
+        - vulnerability: "Proportions suggest fragility"
+        - softness: "Muted colors and rounded elements are gentle"
+        - intimacy: "Small size creates personal, one-on-one feeling"
+      
+      proportion_rules:
+        head_to_body: "1.2 to 2.0 (introspective, heavy with feeling)"
+        facial_feature_count: "1-2 (minimal, suggesting withdrawn)"
+        color_saturation: "muted (matching internal emotional state)"
+      
+      design_intent_keywords:
+        - "melancholic"
+        - "sad"
+        - "wistful"
+        - "lonely"
+        - "introspective"
+        - "vulnerable"
+        - "drooping"
+      
+      forbidden_combinations:
+        - "melancholic + large_round_orb head"
+        - "melancholic + vivid color triad"
+        - "melancholic + dot_eyes_curved_smile"
+      rationale: |
+        Round heads broadcast confidence (contradicts melancholy).
+        Vivid colors suggest energy (contradicts sadness).
+        Curved smiles deny the emotional reality.
+    
+    anxious_character_archetype:
+      character_type: "emotional_tone"
+      examples: ["Keroppi in worried moments", "Stress-related Sanrio designs"]
+      
+      core_intention: "Nervous energy that's still lovable"
+      commercial_promise: |
+        "This character is worried, but it's okay. Worry is relatable.
+        This small, tense thing is still cute and safe to care about."
+      
+      composition_principle: |
+        Anxious Sanrio characters use:
+        - Slightly angular or tense shapes (simplified_geometric, ovoid_with_point)
+        - Head-dominant proportions (large head, small body for vulnerability)
+        - Expressive but tense faces (curious_expression, minimal_expression)
+        - Cool or neutral color palettes (pale_blue_lilac, pale_gray)
+        - Pocket-sized (small enough to hold and protect)
+      
+      why_this_works: |
+        Slight angularity reads as tension without aggression. Head dominance
+        suggests overthinking. Cool colors match anxious "freezing" sensations.
+        Pocket-sized makes the character holdable—you can protect it.
+        Together: "I'm worried but I'm small and harmless."
+      
+      sensory_principles:
+        - recognizability: "Anxiety is a universal experience"
+        - manageable_intensity: "Tension expressed but not overwhelming"
+        - protectibility: "Size and proportions invite caregiving"
+        - honesty: "Doesn't pretend to confidence"
+      
+      proportion_rules:
+        head_to_body: "0.9 to 1.5 (overthinking, big feelings in small package)"
+        facial_feature_count: "2-3 (expressive worry)"
+        color_saturation: "balanced to muted (not overstimulating)"
+      
+      design_intent_keywords:
+        - "anxious"
+        - "worried"
+        - "nervous"
+        - "tense"
+        - "stressed"
+        - "tentative"
+        - "uptight"
+      
+      forbidden_combinations:
+        - "anxious + large size categories"
+        - "anxious + warm, vivid colors"
+        - "anxious + serene facial expression"
+      rationale: |
+        Large sizes reduce the protective feeling. Warm vivid colors seem
+        dismissive of real worry. Serene expressions deny the emotional state.
+    
+    sleepy_character_archetype:
+      character_type: "emotional_tone"
+      examples: ["Gudetama (eternal tiredness)", "Badtz-Maru sleeping variations"]
+      
+      core_intention: "Cozy acceptance of rest and low energy"
+      commercial_promise: |
+        "It's okay to be tired. Rest is valid. This character makes
+        tiredness feel safe and even precious."
+      
+      composition_principle: |
+        Sleepy Sanrio characters use:
+        - Soft, drooping shapes (minimalist_blob, elongated_teardrop)
+        - Relaxed proportions (limbless_blob, extended_and_fluid)
+        - Closed or half-closed faces (closed_happy_eyes, minimal_expression)
+        - Warm but muted colors (peachy_cream_blue, dusty_rose_sage)
+        - Small or medium size (cozy, nestable)
+      
+      why_this_works: |
+        Drooping shapes are physically associated with relaxation and gravity.
+        Limbless or fluid proportions suggest melting into rest. Closed eyes
+        are sleeping. Warm-muted colors are like comfortable blankets.
+        Small size makes the character seem like something you could cuddle.
+      
+      sensory_principles:
+        - softness: "Every element is gentle and non-threatening"
+        - relaxation: "Shapes suggest abandoning tension"
+        - nurture: "Proportions invite protective care"
+        - warmth: "Color temperature is comforting, not stimulating"
+      
+      proportion_rules:
+        head_to_body: "flexible (0.5 to 1.5) - sleeping creatures can be any shape"
+        facial_feature_count: "0-1 (minimal, eyes closed or absent)"
+        color_saturation: "muted to warm (soothing)"
+      
+      design_intent_keywords:
+        - "sleepy"
+        - "tired"
+        - "drowsy"
+        - "cozy"
+        - "restful"
+        - "lazy"
+        - "relaxed"
+      
+      forbidden_combinations:
+        - "sleepy + angular shapes"
+        - "sleepy + cool, desaturated colors (too stark)"
+        - "sleepy + expressive, alert faces"
+      rationale: |
+        Angular shapes suggest alertness. Cool, desaturated colors feel
+        clinical, not cozy. Alert faces contradict the sleepy intention.
+    
+    mischievous_character_archetype:
+      character_type: "emotional_tone"
+      examples: ["Badtz-Maru normal mode", "Playful character variations"]
+      
+      core_intention: "Harmless trouble-making that's fun, not mean"
+      commercial_promise: |
+        "This character has personality and spunk. It's bold enough to
+        break rules but kind enough that you enjoy it."
+      
+      composition_principle: |
+        Mischievous Sanrio characters use:
+        - Slightly angular or spirited shapes (cat_like_curved, tilted_oval)
+        - Balanced or slightly head-dominant proportions
+        - Expressive, knowing faces (curious_expression, dot_eyes with attitude)
+        - Warm, slightly saturated colors (butter_yellow, light_coral)
+        - Small to medium size (agile, nimble)
+      
+      why_this_works: |
+        Slight angles suggest sharpness without menace. Tilted heads are
+        quizzical and playful. Expressive faces show personality. Warm colors
+        prevent mischief from feeling mean. The character is small enough
+        to seem harmless but spirited enough to seem interesting.
+      
+      sensory_principles:
+        - personality: "Character has opinions and energy"
+        - harmlessness: "Trouble-making is playful, not cruel"
+        - spiritedness: "Proportion and color suggest vitality"
+        - relatability: "Everyone has a mischievous side"
+      
+      proportion_rules:
+        head_to_body: "0.7 to 1.0 (confident but not arrogant)"
+        facial_feature_count: "2-3 (expressive personality)"
+        color_saturation: "warm, balanced to slightly vivid"
+      
+      design_intent_keywords:
+        - "mischievous"
+        - "playful"
+        - "cheeky"
+        - "spirited"
+        - "clever"
+        - "witty"
+        - "impish"
+      
+      forbidden_combinations:
+        - "mischievous + drooping shapes (sad vibe)"
+        - "mischievous + muted colors (tired vibe)"
+        - "mischievous + serene expression (no personality)"
+      rationale: |
+        Drooping shapes undermine the playfulness. Muted colors make
+        mischief seem tiresome. Serene expressions remove the personality.
+    
+    dreamy_character_archetype:
+      character_type: "emotional_tone"
+      examples: ["Cinnamoroll (dreamy mood)", "Fantasy-themed characters"]
+      
+      core_intention: "Escape into imagination and wonder"
+      commercial_promise: |
+        "This character invites you into a magical world where anything
+        is possible. Reality is softer here."
+      
+      composition_principle: |
+        Dreamy Sanrio characters use:
+        - Organic, impossible shapes (minimalist_blob, extended_and_fluid)
+        - Flexible proportions that defy gravity
+        - Wonder-filled faces (curious_expression, large_oval_eyes)
+        - Ethereal color palettes (soft_peachy_cream_blue, light_mint_pink)
+        - Any size (dreamland has no rules)
+      
+      why_this_works: |
+        Organic shapes that don't perfectly match reality suggest unreality.
+        Proportions that defy normal body mechanics suggest dream-logic.
+        Curious, wonder-filled expressions suggest awe. Ethereal colors
+        feel unreal and magical. Together, they create cognitive dissonance
+        that reads as "this is from another world."
+      
+      sensory_principles:
+        - surrealism: "Things don't quite follow normal rules"
+        - wonder: "Expressions and proportions suggest amazement"
+        - softness: "Colors and shapes are dreamy, not harsh"
+        - possibility: "The character implies worlds beyond the normal"
+      
+      proportion_rules:
+        head_to_body: "flexible and unconventional (0.5 to 2.0+)"
+        facial_feature_count: "1-3 (wonder, not overwhelm)"
+        color_saturation: "ethereal, slightly desaturated"
+      
+      design_intent_keywords:
+        - "dreamy"
+        - "ethereal"
+        - "magical"
+        - "surreal"
+        - "whimsical"
+        - "impossible"
+        - "fantasy"
+      
+      forbidden_combinations:
+        - "dreamy + geometric, angular shapes (too grounded)"
+        - "dreamy + vivid, saturated colors (too real)"
+        - "dreamy + minimal features (needs wonder)"
+      rationale: |
+        Angular shapes anchor things to reality. Vivid colors feel too
+        present and immediate. Minimal features remove the sense of
+        character and wonder.
+    
+    determined_character_archetype:
+      character_type: "emotional_tone"
+      examples: ["Badtz-Maru in boss mode", "Warrior variations"]
+      
+      core_intention: "Cute confidence and unstoppable spirit"
+      commercial_promise: |
+        "This character is small but mighty. You can be powerful without
+        being large or scary."
+      
+      composition_principle: |
+        Determined Sanrio characters use:
+        - Upright, confident shapes (simplified_geometric, large_round_orb)
+        - Balanced or body-focused proportions
+        - Confident, focused faces (curious_expression, minimal_expression)
+        - Warm or cool, saturated colors (no muted palette)
+        - Medium to large size (presence and authority)
+      
+      why_this_works: |
+        Upright shapes read as confident. Balanced proportions suggest
+        strength without heaviness. Focused faces show intention. Saturated
+        colors convey energy and commitment. Larger size projects authority
+        without menace. Together: "I'm small but I have purpose."
+      
+      sensory_principles:
+        - confidence: "Proportions and expression show commitment"
+        - capability: "Shape suggests readiness for action"
+        - approachability: "Still cute despite determination"
+        - inspiration: "Character motivates action"
+      
+      proportion_rules:
+        head_to_body: "0.6 to 0.8 (balanced, grounded, capable)"
+        facial_feature_count: "2-3 (focused expression)"
+        color_saturation: "saturated, warm or cool"
+      
+      design_intent_keywords:
+        - "determined"
+        - "strong"
+        - "fierce"
+        - "bold"
+        - "warrior"
+        - "powerful"
+        - "confident"
+      
+      forbidden_combinations:
+        - "determined + drooping shapes (weakness)"
+        - "determined + muted colors (fatigue)"
+        - "determined + serene/minimal expression (passivity)"
+      rationale: |
+        Drooping shapes undermine confidence. Muted colors suggest
+        weariness. Serene expressions contradict determination.
+
+  # ============================================================================
+  # UNIVERSAL DESIGN PRINCIPLES (apply to all archetypes)
+  # ============================================================================
+  
+  universal_principles:
+    
+    principle_proportion_precision:
+      statement: |
+        The ratio of head to body, not the absolute size, determines cuteness.
+        A 1:1 ratio is always cute. A 2:1 ratio is introspective.
+        A 0.5:1 ratio is confident. The precision matters more than
+        the magnitude.
+      
+      implication: |
+        Characters can be designed at any actual size. The proportional
+        relationships remain constant. Sanrio's genius is mathematical
+        rather than material.
+    
+    principle_feature_economy:
+      statement: |
+        Every feature must earn its existence. If a character has
+        three facial features, each should communicate distinct emotional
+        information. One feature wasted is adorability points lost.
+      
+      implication: |
+        Blank faces are sometimes cuter than busy faces. Minimalism
+        is a deliberate choice, not a limitation.
+    
+    principle_pastel_restraint:
+      statement: |
+        Color saturation is emotional temperature. Muted colors create
+        intimacy and melancholy. Vivid colors create celebration and joy.
+        The choice must match the emotional intention.
+      
+      implication: |
+        All Sanrio characters live in the pastel spectrum. Outside this
+        spectrum, characters stop being Sanrio. This is not limiting;
+        it's defining.
+    
+    principle_approachability_priority:
+      statement: |
+        Before anything else, a Sanrio character must be safe to approach.
+        No sharp edges (metaphorical or literal). No expressions of judgment
+        or anger. The character must welcome you.
+      
+      implication: |
+        This is why Sanrio characters work across all ages and cultures.
+        They speak to something universal: the desire to be welcomed.
+    
+    principle_emotional_honesty:
+      statement: |
+        Sanrio characters never pretend to emotions they don't have.
+        A sad character is sad. A sleepy character is tired. This honesty
+        paradoxically increases approachability because people trust it.
+      
+      implication: |
+        You can never "fix" a sad Sanrio character by making it smile.
+        The sadness is the point. The permission to feel the feeling
+        is the gift.
+
+  # ============================================================================
+  # INHERITANCE AND EXTENSION RULES
+  # ============================================================================
+  
+  inheritance_guidance: |
+    When creating new Sanrio characters (variants, new archetypes, or
+    experimental designs), inherit from these principles:
+    
+    1. Start with emotional_tone as the prime.
+       All other choices must express this emotion.
+    
+    2. Select head_shape and body_proportion based on the archetype's
+       composition_principle, not arbitrary preference.
+    
+    3. Validate against forbidden_combinations for that archetype.
+       If you want to break the rules, you're creating something new,
+       not a Sanrio character.
+    
+    4. Apply universal_principles as hard constraints:
+       - Always maintain proportional_precision
+       - Always practice feature_economy
+       - Always honor pastel_restraint
+       - Always prioritize approachability
+       - Always maintain emotional_honesty
+    
+    5. Use design_intent_keywords to generate character variations.
+       A variation inherits the archetype's emotional_tone and keeps
+       at least 2 of its defining proportional choices.
+    
+    Example: Creating a "determined_but_anxious" variation:
+    - Inherit from: determined_character_archetype
+    - Modify: Add slightly angular shapes to suggest tension
+    - Keep: Warm, saturated colors (determined), medium size (determined)
+    - Validate: Does this still read as the intended emotion?
+    - Rule check: Is it still approachable? Emotionally honest?
