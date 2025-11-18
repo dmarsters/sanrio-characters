@@ -49,12 +49,11 @@ Repository = "https://github.com/lushy/sanrio-characters.git"
 Issues = "https://github.com/lushy/sanrio-characters/issues"
 
 [tool.setuptools]
-packages = ["sanrio_characters"]
+packages = ["sanrio_characters", "sanrio_characters.tools"]
 
 [tool.setuptools.package-data]
 sanrio_characters = [
     "data/ologs/*.yaml",
-    "data/legacy/*.json",
 ]
 
 [tool.black]
