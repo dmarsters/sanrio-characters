@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "sanrio-design": {
+      "command": "python",
+      "args": ["-m", "sanrio_characters.server"],
+      "cwd": "~/Documents/sanrio_characters"
+    }
+  }
+}
